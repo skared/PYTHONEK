@@ -1,3 +1,4 @@
+#4
 class Food(object):
     def __init__(self):
         print("Creating Food")
@@ -46,7 +47,7 @@ class Dog(object):
 
 American_pitbulterier = Dog("American Pitublterier", "United States","8 – 15")
 del American_pitbulterier
-
+#5
 class Maltese(Dog):
     def __init__(self,breed_of_dog,origin,length_of_life):
         super(Maltese, self).__init__(breed_of_dog,origin,length_of_life)

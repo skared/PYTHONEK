@@ -1,0 +1,20 @@
+class Human:
+    def __init__(self, firstname, lastname):
+        self.firstname = firstname
+        self.lastname = lastname
+
+
+class Somebody(Human):
+    def __init__(self, firstname, lastname, age):
+        super(Somebody, self).__init__(firstname, lastname)
+        self.age = age
+
+    def describe_somebody(self):
+        print("Hi! You are {} {}. You are {} years old!".format(self.firstname, self.lastname, self.age))
+
+firstname = input("What's your name?")
+lastname = input("Whats's your surname?")
+age = input("How old are u?")
+
+somebody = Somebody(firstname, lastname, age)
+somebody.describe_somebody()

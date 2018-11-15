@@ -1,5 +1,5 @@
 
-class Pojazd(object):
+class Pojazd():
     marka = ''
     model = ''
     pojemnosc = 0
